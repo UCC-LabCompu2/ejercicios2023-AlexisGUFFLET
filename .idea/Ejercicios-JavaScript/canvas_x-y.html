@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas con Circulo y Cuadrado</title>
+    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+    <link href="miEstilo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="misFunciones.js"></script>
+</head>
+
+<body>
+<h1>Canvas 3</h1>
+<p>Ejercicio: Dibujar  la imagen 'auto.png' en el canvas desde la posición pasada por parámetro. La función debe llamarse al presionar el boton.</p>
+
+<div class="centrado div-conver">
+    <form>
+        <p>
+            <label for="posicionX"> X</label> = <input id="posicionX" type="text" name="inp_x">
+        </p>
+        <p>
+            <label for="posicionY"> Y</label> = <input id="posicionY" type="text" name="inp_y">
+        </p>
+        <button type="button" onclick="dibujarImagen(inp_x.value, inp_y.value)">
+            Dibujar!
+        </button>
+    </form>
+</div>
+
+<canvas id="myCanvas" class="ejer" width="1000px" height="500px">
+    Tu navegador no soporta el tag de HTML5 canvas.
+</canvas>
+
+</body>
+</html>

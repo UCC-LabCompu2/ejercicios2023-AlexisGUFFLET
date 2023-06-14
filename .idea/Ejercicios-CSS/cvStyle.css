@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    font-family: 'Poppins', cursive;
+    background: linear-gradient(to bottom, #c2dde1, #575bad);
+}
+div{
+    border: 2px solid #002860;
+    margin: 10px;
+    padding: 1px 1px 1px 15px;
+    background-color: rgba(209, 234, 234, 0.6);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(91, 151, 220, 0.55);
+}
+
+div.especial h3{
+    font-family:'Roboto', sans-serif;
+    text-shadow: 10px 5px rgba(85, 85, 85, 0.4);
+}
+
+.noshadow{
+    box-shadow: 0px 0px rgba(200,0,0,1);
+}
+
+
+#principal {
+    float:left;
+    width: 120px;
+    margin: 13px 5px 0px;
+    border-radius: 50%;
+}

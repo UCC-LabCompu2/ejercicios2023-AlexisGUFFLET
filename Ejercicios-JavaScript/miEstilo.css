@@ -3,16 +3,13 @@ h1{
     font-family: 'Inknut Antiqua', serif;
     line-height: 130%;
 }
-
 .body-num{
     background: url("images/fondo_numeros.jpg");
     background-size: cover;
 }
-
 .centrado{
     margin: auto;
 }
-
 .div-conver{
     background: #FFFFFF;
     border: 2px solid #000000;
@@ -23,31 +20,26 @@ h1{
     padding: 10px 10px;
     margin-top: 50px;
 }
-
 .color-div{
-    background: #feab5a;
+    background: #7aecfc;
     max-width: 500px;
+    display: none; /*Para que se oculte la div sola*/
 }
-
 .operacionesMat input{
     max-width: 40px;
 }
-
 /*Formulario*/
 input{
     border-radius: 2px;
-    box-shadow: 5px 5px 10px #7a8aac;
+    box-shadow: 5px 5px 10px #004ef8;
 }
-
 input:focus {
-    border-color: #19ac67;
+    border-color: #9ec5b2;
 }
-
 .ejer{
     border:1px solid #000000;
-    background: rgba(240, 255, 105, 0.47);
+    background: rgb(199, 220, 248);
 }
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -56,31 +48,26 @@ ul {
     background-color: #f1f1f1;
     border: 1px solid #555;
 }
-
 li a {
     display: block;
-    color: #000;
+    color: #077cea;
     padding: 8px 16px;
     text-decoration: none;
     font-family: 'Inknut Antiqua', serif;
     font-size: 10px;
 }
-
 li {
     text-align: center;
     border-bottom: 1px solid #555;
 }
-
 li:last-child {
     border-bottom: none;
 }
-
 li a.active {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #cdffce;
+    color: #ff0000;
 }
-
 li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+    background-color: #a49292;
+    color: #ff0000;
 }

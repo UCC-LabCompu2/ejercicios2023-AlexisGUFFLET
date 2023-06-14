@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Canvas con Circulo y Cuadrado</title>
@@ -8,12 +8,16 @@
     <script type="text/javascript" src="misFunciones.js"></script>
 </head>
 
-<body onload="dibujarCirculoCuadrado()">
-<h1>Canvas 1</h1>
-<p>Ejercicio: Dibujar un Circulo y un cuadrado en una página. La función debe llamarse al cargar la página</p>
-<canvas id="myCanvas" class="ejer" width="800px" height="600px">
+<body >
+<h1>Canvas 2</h1>
+<p>Ejercicio: Mini-Paint</p>
+<canvas id="myCanvas" class="ejer" width="800px" height="600px" onmousemove="dibujar(event)">
     Tu navegador no soporta el tag de HTML5 canvas.
 </canvas>
+<br>
+<button onclick="limpiarcanvas()">
+    limpiar canvas
+</button>
 
 </body>
 </html>

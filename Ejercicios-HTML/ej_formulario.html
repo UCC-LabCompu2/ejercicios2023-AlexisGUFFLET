@@ -1,78 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio Formulario</title>
     <style>
-        form {
-            display: block;
-            margin-top: 0em;
-        }
+        form {display: block; margin-top: 0;}
     </style>
 </head>
+
 <body>
 <!--Cree un Formulario con los campos que se proponen a continuacion-->
-
 <!--Agregue el atributo legend-->
 
 <!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-<form>`
+<form name="FormSuscripcion">
     <p>
-        Nombre:<input type="text" name="nombre">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre">
     </p>
     <p>
-        Apellido:<input type="text" name="apellido">
+        <label for="nombreA">Apellido:</label>
+        <input type="text" name="apellido" id="nombreA" placeholder="Ingresar apellido">
     </p>
     <p>
         Sexo:
-        Masculino <input type="radio" value="masculino"  name="genero">
-        Femenino <input type="radio" value="feminino"  name="genero">
-        Prefiero no revelarlo <input type="radio" value="noRev" name="genero">
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genero" value="masc" id="masc">
+        <label for="fem">Femenino</label>
+        <input type="radio" name="genero" value="fem" id="fem">
     </p>
     <p>
-        Edad: <input type="number" name="edad">
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" placeholder="Ingresar edad">
     </p>
     <p>
-        Email: <input type="email" name="email">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="email@ucc.com">
     </p>
     <p>
-        Usuario: <input type="text" name="usuario">
+        <label for="user">Usuario:</label>
+        <input type="text" name="user" id="user" placeholder="Ingresar usuario">
     </p>
     <p>
-        Password: <input type="password" name="password">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Ingresar password">
     </p>
     <p>
-        Confirmar Password: <input type="password" name="password2">
+        <label for="password2">Confirmar Password:</label>
+        <input type="password" name="password2" id="password2" placeholder="Corroborar password">
     </p>
     <p>
-        Tipo de servicio:
-        <select>
-            <option value="free">Free</option>
-            <option value="standard">Standard</option>
-            <option value="premium">Premium</option>
+        <label for="tipo_servicio">Tipo de servicio:</label>
+        <select name="tipo_servicio" id="tipo_servicio">
+            <option value="free"> Free </option>
+            <option value="stand"> Standard </option>
+            <option value="premium"> Premium </option>
         </select>
     </p>
     <p>
         Tema:
-        Política <input type ="checkbox" name="politica" value="politica">
-        Negocios <input type ="checkbox" name="negocios" value="negocios">
-        Tecnología <input type ="checkbox" name="tecnología" value="tecnología">
-        Salud <input type ="checkbox" name="salud" value="salud">
+        <label for="politica">Política</label>
+        <input type="checkbox" name="tema" value="politica" id="politica">
+        <label for="negocios">Negocios</label>
+        <input type="checkbox" name="tema" value="negocios" id="negocios">
+        <label for="tech">Tecnología</label>
+        <input type="checkbox" name="tema" value="tech" id="tech">
+        <label for="salud">Salud</label>
+        <input type="checkbox" name="tema" value="salud" id="salud">
     </p>
     <p>
-        Agregue un comentario:
-        <textarea> </textarea>
+        <label for="comentario">Agregue un comentario:</label>
+        <textarea id="comentario"> Agregue comentario </textarea>
     </p>
+
     <p>
         <button>
             Boton de Enviar
         </button>
     </p>
-
 </form>
-
 </body>
 </html>
